@@ -14,7 +14,7 @@ const SigninPage = () => {
   const [right, setRight] = useState("unset");
   const [width, setWidth] = useState(0);
 
-  const [backgroundImage, setBackgroundImage] = useState(assets.images.signinBg);
+  const [backgroundImage, setBackgroundImage] = useState(assets.images.signinBg1);
   const [currMode, setCurrMode] = useState(ScreenMode.SIGN_IN);
 
   const onSwitchMode = (mode) => {
@@ -22,7 +22,7 @@ const SigninPage = () => {
 
     const timeout1 = setTimeout(() => {
       setCurrMode(mode);
-      setBackgroundImage(mode === ScreenMode.SIGN_IN ? assets.images.signinBg : assets.images.signupBg);
+      setBackgroundImage(mode === ScreenMode.SIGN_IN ? assets.images.signinBg1 : assets.images.signupBg1);
     }, 1100);
 
     const timeout2 = setTimeout(() => {
